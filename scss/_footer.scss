@@ -1,0 +1,26 @@
+footer {
+    background: rgb(55, 54, 54);
+    color: white;
+    padding: 7px 0;
+    a {
+        color: white;
+    }
+    .title-footer {
+        font-size: 17px;
+        font-weight: 100;
+        margin: 22px 0 18px 25px;
+    }
+    li {
+        padding-bottom: 8px;
+        margin-left: -15px;
+        font-weight: 300;
+    }
+    .fa-utensils {
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    .fa-handshake-angle {
+        margin-right: 7px;
+        font-size: 11px;
+    }
+}

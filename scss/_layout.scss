@@ -1,0 +1,120 @@
+
+.photo-main {
+    max-height: 550px; 
+    width: 100%;
+    object-fit: cover;
+}
+
+.menu {
+    position: relative;
+    background-color: rgb(238, 234, 234);
+    margin: auto;
+    margin-top: -55px;
+    border-radius: 35px 35px 0 0;
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 15px 0 15px;
+        h1 {
+            font-size: 26px; 
+        }
+        .heart {
+            @include heart;
+        }
+    }
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 12px 0 15px;
+    @media (min-width: 1000px) {
+        flex-direction: row; 
+    }
+}
+
+.menu-course {
+    width: 100%;
+    &__title {
+        font-size: 17px;
+        font-weight: 300;
+        position: relative;
+        padding-bottom: 8px;
+        @include apparition;
+        &::after {
+            border-bottom: 3px solid $Tertiary;
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 4px;
+            width: 43px;
+        } 
+    }    
+}
+
+.menu-course-card {
+    box-shadow: $card-shadow;
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    padding: 14px;
+    margin-bottom: 15px;
+    @media (min-width: 1000px) {
+        width: 97%;
+        
+    }
+    @include apparition;
+    &:hover .check-anim {
+        margin-right: -15px;
+        i {
+            transform: rotate(0deg);
+        }  
+    }
+    &__text {
+        flex: 1;
+        min-width: 0;
+    }
+    &__price {
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+.check-anim {
+    background-color: #99E2D0;
+    width: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -14px -79px -14px 14px;
+    transition: 300ms ease-out;
+    i {
+        background-color: white;
+        border-radius: 100%;
+        color: #99E2D0;
+        padding: 3px;
+        transform: rotate(-360deg);
+        transition: transform 400ms ease-out 50ms;
+      }
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    padding: 35px 0 55px 0;
+    &__command {
+        @include btn;
+     }
+  }
+  
+ 
+
+
+ 
+
+
+
+
