@@ -28,9 +28,8 @@
 .pendulum {
     position: absolute;
     top: 10%;
-    font-size: 5px;
-    transform: rotateZ(45deg);
-    transform-origin: center top;
+    transform: rotate(45deg);
+    transform-origin: left top;
     font-size: 3px;
     animation: pendulum 1.2s alternate ease-in-out 2;
     &.two {
@@ -43,10 +42,10 @@
 
 @keyframes pendulum {
     0% {
-        transform: rotateZ(45deg);
+        transform: rotate(45deg);
     }
     100% {
-        transform: rotateZ(-45deg);  
+        transform: rotate(-45deg);  
     }
 }
 
@@ -87,13 +86,13 @@
 }
 
 .reservation {
-    padding: 15px 5px 70px 5px;
+    padding: 15px 32px 70px 32px;
     background: rgb(238, 234, 234, 0.5);
     text-align: center;
     display: block;
     &__title {
         font-weight: 700;
-        padding-bottom: 5px;
+        padding: 0 32px 5px 32px;
     }
     &__subtitle {
         font-weight: 100;

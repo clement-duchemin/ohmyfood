@@ -93,13 +93,12 @@ h6 {
 .pendulum {
   position: absolute;
   top: 10%;
-  font-size: 5px;
-  -webkit-transform: rotateZ(45deg);
+  -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
-          transform: rotateZ(45deg);
-  -webkit-transform-origin: center top;
-      -ms-transform-origin: center top;
-          transform-origin: center top;
+          transform: rotate(45deg);
+  -webkit-transform-origin: left top;
+      -ms-transform-origin: left top;
+          transform-origin: left top;
   font-size: 3px;
   -webkit-animation: pendulum 1.2s alternate ease-in-out 2;
           animation: pendulum 1.2s alternate ease-in-out 2;
@@ -115,23 +114,23 @@ h6 {
 
 @-webkit-keyframes pendulum {
   0% {
-    -webkit-transform: rotateZ(45deg);
-            transform: rotateZ(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   100% {
-    -webkit-transform: rotateZ(-45deg);
-            transform: rotateZ(-45deg);
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
   }
 }
 
 @keyframes pendulum {
   0% {
-    -webkit-transform: rotateZ(45deg);
-            transform: rotateZ(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   100% {
-    -webkit-transform: rotateZ(-45deg);
-            transform: rotateZ(-45deg);
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
   }
 }
 .cord {
@@ -214,14 +213,14 @@ h6 {
 }
 
 .reservation {
-  padding: 15px 5px 70px 5px;
+  padding: 15px 32px 70px 32px;
   background: rgba(238, 234, 234, 0.5);
   text-align: center;
   display: block;
 }
 .reservation__title {
   font-weight: 700;
-  padding-bottom: 5px;
+  padding: 0 32px 5px 32px;
 }
 .reservation__subtitle {
   font-weight: 100;
@@ -436,9 +435,8 @@ h6 {
   opacity: 1;
   background: -o-linear-gradient(280deg, #FF79DA, #9356DC);
   background: linear-gradient(170deg, #FF79DA, #9356DC);
-  background-clip: text;
-  -moz-background-clip: text;
   -webkit-background-clip: text;
+          background-clip: text;
   color: transparent;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -497,9 +495,8 @@ h6 {
   opacity: 1;
   background: -o-linear-gradient(280deg, #FF79DA, #9356DC);
   background: linear-gradient(170deg, #FF79DA, #9356DC);
-  background-clip: text;
-  -moz-background-clip: text;
   -webkit-background-clip: text;
+          background-clip: text;
   color: transparent;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -513,26 +510,20 @@ h6 {
 }
 
 .menu-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: grid;
+  gap: 5px;
   padding: 0 12px 0 15px;
+  grid-template-columns: minmax(0, 1fr);
 }
 @media (min-width: 1000px) {
   .menu-container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
 .menu-course {
   width: 100%;
+  overflow: hidden;
 }
 .menu-course__title {
   font-size: 17px;
@@ -608,7 +599,7 @@ h6 {
 }
 @media (min-width: 1000px) {
   .menu-course-card {
-    width: 97%;
+    max-width: 97%;
   }
 }
 .menu-course-card--1 {
