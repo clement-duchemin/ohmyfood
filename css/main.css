@@ -61,8 +61,8 @@ h6 {
   top: 0;
   left: 0;
   background-color: white;
-  -webkit-animation: BG 4.2s forwards ease-in-out;
-          animation: BG 4.2s forwards ease-in-out;
+  -webkit-animation: BG 3s forwards ease-in-out;
+          animation: BG 3s forwards ease-in-out;
 }
 
 @-webkit-keyframes BG {
@@ -96,9 +96,9 @@ h6 {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
-  -webkit-transform-origin: left top;
-      -ms-transform-origin: left top;
-          transform-origin: left top;
+  -webkit-transform-origin: center top;
+      -ms-transform-origin: center top;
+          transform-origin: center top;
   font-size: 3px;
   -webkit-animation: pendulum 1.2s alternate ease-in-out 2;
           animation: pendulum 1.2s alternate ease-in-out 2;

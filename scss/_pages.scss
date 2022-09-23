@@ -9,7 +9,7 @@
     top: 0;
     left: 0;
     background-color: white;
-    animation: BG 4.2s forwards ease-in-out;
+    animation: BG 3s forwards ease-in-out;
 }
 
 @keyframes BG {
@@ -29,7 +29,7 @@
     position: absolute;
     top: 10%;
     transform: rotate(45deg);
-    transform-origin: left top;
+    transform-origin: center top;
     font-size: 3px;
     animation: pendulum 1.2s alternate ease-in-out 2;
     &.two {
