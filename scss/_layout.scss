@@ -86,7 +86,7 @@
 }
 
 .check-anim {
-    background-color: #99E2D0;
+    background-color: $Tertiary;
     width: 64px;
     display: flex;
     justify-content: center;
@@ -96,7 +96,7 @@
     i {
         background-color: white;
         border-radius: 100%;
-        color: #99E2D0;
+        color: $Tertiary;
         padding: 3px;
         transform: rotate(-360deg);
         transition: transform 400ms ease-out 50ms;
