@@ -96,9 +96,9 @@ h6 {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
-  -webkit-transform-origin: center top;
-      -ms-transform-origin: center top;
-          transform-origin: center top;
+  -webkit-transform-origin: top;
+      -ms-transform-origin: top;
+          transform-origin: top;
   font-size: 3px;
   -webkit-animation: pendulum 1.2s alternate ease-in-out 2;
           animation: pendulum 1.2s alternate ease-in-out 2;

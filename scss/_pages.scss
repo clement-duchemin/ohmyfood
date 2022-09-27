@@ -29,7 +29,7 @@
     position: absolute;
     top: 10%;
     transform: rotate(45deg);
-    transform-origin: center top;
+    transform-origin: top;
     font-size: 3px;
     animation: pendulum 1.2s alternate ease-in-out 2;
     &.two {
