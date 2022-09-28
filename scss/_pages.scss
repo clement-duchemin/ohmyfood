@@ -90,6 +90,7 @@
     background: rgb(238, 234, 234, 0.5);
     text-align: center;
     display: block;
+    height: 300px;
     &__title {
         font-weight: 700;
         padding: 0 32px 5px 32px;
@@ -99,11 +100,20 @@
         font-size: 18px;
         padding-bottom: 30px;
     }
-    &__btn {
-       @include btn;
-       padding: 15px 21px;  
-    }
 }
+
+.btn-1 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 10px;
+    top: -115px;
+    margin-right: 20px;
+    &__explore {
+        @include btn;
+        padding: 15px 20px;
+     }
+  }
 
 .functioning {
     padding: 35px 10px 40px 10px;
@@ -132,7 +142,7 @@
     background: rgb(238, 234, 234, 0.5);
     box-shadow: $card-shadow;
     &--mod {
-        background-color: #eee7f6;
+        background-color: #eae3f1;
     }
     @media (min-width: 880px) {
         flex: 1;
