@@ -217,6 +217,7 @@ h6 {
   background: rgba(238, 234, 234, 0.5);
   text-align: center;
   display: block;
+  height: 300px;
 }
 .reservation__title {
   font-weight: 700;
@@ -227,25 +228,66 @@ h6 {
   font-size: 18px;
   padding-bottom: 30px;
 }
-.reservation__btn {
+
+.btn-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  left: 10px;
+  top: -115px;
+  margin-right: 20px;
+}
+.btn-1__explore {
   border: 1px solid none;
   background-image: -o-linear-gradient(280deg, #FF79DA, #9356DC);
   background-image: linear-gradient(170deg, #FF79DA, #9356DC);
   padding: 15px 49px;
   border-radius: 30px;
   color: white;
+  position: relative;
+  z-index: 1;
+  padding: 15px 20px;
+}
+.btn-1__explore::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
   -webkit-transition: all 200ms ease-in-out;
   -o-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
-  -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.25);
-  padding: 15px 21px;
-}
-.reservation__btn:hover {
-  -webkit-filter: brightness(1.1);
-          filter: brightness(1.1);
   -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.55);
           box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.55);
+  opacity: 0.5;
+}
+.btn-1__explore::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  -webkit-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  background-image: -o-linear-gradient(280deg, #ff88de, #9b63df);
+  background-image: linear-gradient(170deg, #ff88de, #9b63df);
+  opacity: 0;
+  z-index: -1;
+}
+.btn-1__explore:hover::before {
+  opacity: 1;
+}
+.btn-1__explore:hover::after {
+  opacity: 1;
 }
 
 .functioning {
@@ -293,7 +335,7 @@ h6 {
           box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.21);
 }
 .functioning-card--mod {
-  background-color: #eee7f6;
+  background-color: #eae3f1;
 }
 @media (min-width: 880px) {
   .functioning-card {
@@ -701,17 +743,45 @@ h6 {
   padding: 15px 49px;
   border-radius: 30px;
   color: white;
+  position: relative;
+  z-index: 1;
+}
+.btn__command::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
   -webkit-transition: all 200ms ease-in-out;
   -o-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
-  -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.25);
-}
-.btn__command:hover {
-  -webkit-filter: brightness(1.1);
-          filter: brightness(1.1);
   -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.55);
           box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.55);
+  opacity: 0.5;
+}
+.btn__command::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  -webkit-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  background-image: -o-linear-gradient(280deg, #ff88de, #9b63df);
+  background-image: linear-gradient(170deg, #ff88de, #9b63df);
+  opacity: 0;
+  z-index: -1;
+}
+.btn__command:hover::before {
+  opacity: 1;
+}
+.btn__command:hover::after {
+  opacity: 1;
 }
 
 header {
